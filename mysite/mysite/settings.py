@@ -101,7 +101,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
+
 TIME_ZONE = "UTC"
+# @ Anyi you can use your current timezone here
+# but this is not for production
+TIME_  # ZONE = "NZDT"
 
 USE_I18N = True
 
