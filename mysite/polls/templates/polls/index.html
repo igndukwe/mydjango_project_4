@@ -8,12 +8,10 @@
 </head>
 
 <body>
-
+    <!--@Anyi question tag is gotten from {"latest_question_list": latest_question_list} in the index mtd in the views.py-->
     {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
-        <!--li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li-->
-        <!--li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li-->
         <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
         {% endfor %}
     </ul>
